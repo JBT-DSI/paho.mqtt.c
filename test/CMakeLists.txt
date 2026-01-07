@@ -15,8 +15,6 @@ elseif(UNIX)
 		set(LIBS_SYSTEM c dl pthread)
 	elseif (CMAKE_SYSTEM_NAME MATCHES "FreeBSD")
 		set(LIBS_SYSTEM compat pthread)
-	elseif (CMAKE_SYSTEM_NAME MATCHES "QNX")
-		set(LIBS_SYSTEM c) #pthread is included in libc on QNX
 	else()
 		set(LIBS_SYSTEM c pthread)
 	endif()

@@ -16,8 +16,6 @@
 
 #include "SHA1.h"
 
-#include <net/netbyte.h>
-
 #if !defined(OPENSSL)
 #if defined(_WIN32)
 #pragma comment(lib, "crypt32.lib")
